@@ -8,3 +8,8 @@ http://confluence.reload.dk, http://confluence.redir.dev {
     bind 0.0.0.0
     redir https://reload.atlassian.net/wiki
 }
+
+http://wiki.reload.dk, http://wiki.redir.dev {
+    bind 0.0.0.0
+    redir https://reload.atlassian.net/wiki/display/RW
+}
