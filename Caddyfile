@@ -1,0 +1,10 @@
+
+http://jira.reload.dk, http://jira.redir.dev {
+    bind 0.0.0.0
+    redir https://reload.atlassian.net/
+}
+
+http://confluence.reload.dk, http://confluence.redir.dev {
+    bind 0.0.0.0
+    redir https://reload.atlassian.net/wiki
+}
