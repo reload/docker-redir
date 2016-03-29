@@ -14,7 +14,7 @@ http://wiki.reload.dk, http://wiki.redir.dev {
     redir https://reload.atlassian.net/wiki/display/RW
 }
 
-http://db-dump.reload.dk, http://db-dump.redir.dev {
+http://db-data.reload.dk, http://db-dump.reload.dk, http://db-data.redir.dev, http://db-dump.redir.dev {
     bind 0.0.0.0
     redir https://hub.docker.com/r/reload/db-data/tags/
 }
