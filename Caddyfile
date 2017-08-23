@@ -1,4 +1,9 @@
 
+http://next.reload.dk, http://next-reload.redir.dev {
+    bind 0.0.0.0
+    redir https://sq-launch-mnxswgq-2rtq55jzv4via.eu.platform.sh/
+}
+
 http://jira.reload.dk, http://jira.redir.dev {
     bind 0.0.0.0
     redir https://reload.atlassian.net/
