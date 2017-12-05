@@ -9,6 +9,11 @@ http://jira.reload.dk, http://jira.redir.dev {
     redir https://reload.atlassian.net/
 }
 
+http://support.reload.dk, http://support.redir.dev {
+    bind 0.0.0.0
+    redir https://reload.atlassian.net/secure/RapidBoard.jspa?rapidView=254
+}
+
 http://rancher.reload.dk, http://rancher.redir.dev {
     bind 0.0.0.0
     redir https://alpha.reload.dk:8080/
