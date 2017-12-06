@@ -11,7 +11,7 @@ http://jira.reload.dk, http://jira.redir.dev {
 
 http://support.reload.dk, http://support.redir.dev {
     bind 0.0.0.0
-    redir https://reload.atlassian.net/secure/RapidBoard.jspa?rapidView=254
+    redir https://reload.atlassian.net/secure/RapidBoard.jspa?rapidView=254&quickFilter=920
 }
 
 http://rancher.reload.dk, http://rancher.redir.dev {
