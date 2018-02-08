@@ -32,7 +32,7 @@ http://wiki.reload.dk, http://wiki.redir.dev {
 
 http://security.reload.dk, http://security.redir.dev {
     bind 0.0.0.0
-    https://reload.atlassian.net/wiki/spaces/RW/pages/89030669/Sikkerhedstriage
+    redir https://reload.atlassian.net/wiki/spaces/RW/pages/89030669/Sikkerhedstriage
 }
 
 http://db-data.reload.dk, http://db-dump.reload.dk, http://db-data.redir.dev, http://db-dump.redir.dev {
