@@ -33,14 +33,11 @@ http://security.reload.dk, http://security.redir.dev {
 http://db-data.reload.dk, http://db-dump.reload.dk, http://db-data.redir.dev, http://db-dump.redir.dev, http://gcr.reload.dk {
     bind 0.0.0.0
 
-    # `/` is a catch-all in Caddys redir directive. So we cannot have
-    # distinct redirects for the front page and another for catch
-    # all. So we use the rewrite directive (because it understands
-    # regexps) to rewrite the front page to another internal path and
-    # then use redir on that.
+    rewrite {
+        regexp ^/(\w+)$
+        to /_user?authuser={1}@reload.dk
+    }
 
-    rewrite ^/$ /_front
-
-    redir /_front https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-data?project=reloaddk-data 302
-    redir / https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-data?project=reloaddk-data&authuser={path}@reload.dk 302
+    redir /_user https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-data?project=reloaddk-data&authuser={?authuser} 302
+    redir / https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-data?project=reloaddk-data 302
 }
