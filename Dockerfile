@@ -1,11 +1,7 @@
-FROM darron/caddy
+FROM abiosoft/caddy
 
-RUN mkdir /srv
-
-ADD . /srv
+ADD Caddyfile /etc/Caddyfile
 
 WORKDIR /srv
 
 EXPOSE 80
-
-CMD caddy
