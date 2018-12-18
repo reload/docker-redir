@@ -41,3 +41,9 @@ http://db-data.reload.dk, http://db-dump.reload.dk, http://db-data.redir.dev, ht
     redir /_user https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-data?project=reloaddk-data&authuser={?authuser} 302
     redir / https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-data?project=reloaddk-data 302
 }
+
+https://sq.reload.dk http://socialsquare.dk {
+    bind 0.0.0.0
+
+    redir / https://reload.dk{uri}
+}
