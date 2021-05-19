@@ -54,7 +54,7 @@ http://db-datadir.reload.dk, http://db-datadir.redir.dev {
     redir / https://console.cloud.google.com/gcr/images/reloaddk-data/EU/db-datadir?project=reloaddk-data 302
 }
 
-http://liftoffcph.dk http://socialsquare.dk http://www.socialsquare.dk {
+http://liftoffcph.dk, http://www.liftoffcph.dk, http://socialsquare.dk, http://www.socialsquare.dk {
     bind 0.0.0.0
 
     redir / https://reload.dk{uri}
