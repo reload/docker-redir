@@ -24,9 +24,3 @@ http://security.reload.dk, http://security.redir.dev {
     bind 0.0.0.0
     redir https://reload.atlassian.net/wiki/spaces/RW/pages/89030669/Sikkerhedstriage
 }
-
-http://liftoffcph.dk, http://www.liftoffcph.dk {
-    bind 0.0.0.0
-
-    redir / https://reload.dk{uri}
-}
